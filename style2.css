@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');body{
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#name{
+    font-family: 'Sriracha', cursive;    font-size: x-large;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px; 
+    border-bottom: 0.1px solid rgb(85, 80, 80);
+}
+
+header .brand-name a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar ul{
+    font-family: 'Sriracha', cursive;    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+header .navbar ul li{
+    display: inline-block;
+    margin-left:20px;
+}
+
+header .navbar ul li a{
+    text-decoration: none;
+    font-size: 25px; 
+    line-height: 72px; 
+    color: black; 
+    display: block;
+    font-weight: 600;
+    padding: 0px 15px;
+    position: relative;
+}
+
+header .navbar ul li a::before{
+    content: "";
+    height: 2px;
+    background-color: yellow;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition:0.5s;
+}
+
+header .navbar ul li a:hover::before{
+    width: 100%;
+    left: 0px;
+}
+
+
+header .navbar ul li a.active::before{
+    width: 100%;
+    left: 0px;
+}
+
+
+.home{
+    min-height: 200vh;
+    background-image: url('thumb-350-80331.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.block{
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 15px;
+    margin: 200px;
+    margin-top: 400px;
+    border-left: 5px solid black;
+    color: black;
+}
+
+.cv-btn a{
+    border-radius: 4px;
+    color: black;
+    border: 1px solid black;
+    padding:12px 25px; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.cv-btn a:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+}
